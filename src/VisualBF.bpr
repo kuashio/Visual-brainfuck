@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="VisualBF.exe"/>
+    <OBJFILES value="VisualBF.obj Main.obj SplashScreen.obj About.obj input.obj RunThread.obj 
+      Wait.obj LoadThread.obj"/>
+    <RESFILES value="VisualBF.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Main.dfm SplashScreen.dfm About.dfm input.dfm Wait.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="rxctl6.lib bcbsmp.lib vcldb.lib dcctc6.lib dbrtl.lib bdertl.lib vclx.lib 
+      qrpt.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib qrpt.lib vclx.lib bdertl.lib dbrtl.lib dcctc6.lib 
+      vcldb.lib bcbsmp.lib rxctl6.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb97axserver.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="VisualBF.cpp"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\Rx6&quot;;C:\Dream\dccol_pw412\units;bmp;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;C:\Dream\yeah\units;&quot;E:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\DreamControls412\units;$(BCB)\rx\rx275BCB6"/>
+    <LIBPATH value="&quot;C:\Program Files\Borland\Rx6&quot;;C:\Dream\dccol_pw412\units;bmp;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\Projects\Lib;C:\Dream\yeah\units;&quot;E:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\DreamControls412\units;$(BCB)\rx\rx275BCB6"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;C:\Program Files\Borland\Rx6&quot; -IC:\Dream\dccol_pw412\units -Ibmp 
+      -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; -IC:\Dream\yeah\units 
+      -I&quot;E:\Program Files\Borland\CBuilder6\Projects&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -I$(BCB)\DreamControls412\units -I$(BCB)\rx\rx275BCB6 
+      -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -Vx -Ve -X- -a8 -6 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="VisualBF.res" FORMNAME="" UNITNAME="VisualBF.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="VisualBF.cpp" FORMNAME="" UNITNAME="VisualBF" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Main.cpp" FORMNAME="MainForm" UNITNAME="Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SplashScreen.cpp" FORMNAME="Splash" UNITNAME="SplashScreen" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="About.cpp" FORMNAME="AboutBox" UNITNAME="About" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="input.cpp" FORMNAME="InputForm" UNITNAME="input" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RunThread.cpp" FORMNAME="" UNITNAME="RunThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Wait.cpp" FORMNAME="PleaseWait" UNITNAME="Wait" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LoadThread.cpp" FORMNAME="" UNITNAME="LoadThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="VisualBF.todo" FORMNAME="" UNITNAME="VisualBF.todo" CONTAINERID="ToDo" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=18442
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\program files\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+
+[HistoryLists\hlIncludePath]
+Count=3
+Item0=C:\Program Files\Borland\Rx6;C:\Dream\dccol_pw412\units;bmp;C:\Program Files\Borland\CBuilder6\Projects;C:\Dream\yeah\units;E:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\DreamControls412\units;$(BCB)\rx\rx275BCB6
+Item1=C:\Program Files\Borland\Rx6;C:\Dream\dccol_pw412\units;bmp;C:\Program Files\Borland\CBuilder6\Projects;C:\Dream\yeah\units;E:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\DreamControls412\units
+Item2=C:\Program Files\Borland\Rx6;C:\Dream\dccol_pw412\units;bmp;C:\Program Files\Borland\CBuilder6\Projects;C:\Dream\yeah\units;E:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=2
+Item0=C:\Program Files\Borland\Rx6;C:\Dream\dccol_pw412\units;bmp;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;C:\Dream\yeah\units;E:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\DreamControls412\units;$(BCB)\rx\rx275BCB6
+Item1=C:\Program Files\Borland\Rx6;C:\Dream\dccol_pw412\units;bmp;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;C:\Dream\yeah\units;E:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>
