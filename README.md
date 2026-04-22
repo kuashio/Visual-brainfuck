@@ -30,9 +30,7 @@ Visual  brainfuck has a GUI with the following key components:
 - A thoroughly detailed help file.
 
 Here's a screenshot of the well-known Sierpinski triangle brainfuck program running in Visual brainfuck.
-
-
-This is how Visual brainfuck looks.
+![This is how Visual brainfuck looks.](./bmp/screenshot.png)
 
 # About this repository
 
