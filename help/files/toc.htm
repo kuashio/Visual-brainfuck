@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+  <head>
+    <meta name="generator" content="HelpNDoc Freeware Edition">
+    <link rel="StyleSheet" href="toc.css" type="text/css"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.cookie.js"></script>
+    <script type="text/javascript" src="jquery.treeview.min.js"></script>
+    <script type="text/javascript" src="jquery.rich-array-hnd.js"></script>
+    <script type="text/javascript" src="searchdata.js"></script>
+    <script type="text/javascript"><!--
+      $(document).ready(function(){
+        $("#toc").treeview(
+        )
+        $("#keywords").treeview({collapsed: true});
+        $(document.body).click(function(e){var $target = $(e.target); if($target.is("a")) return; hidePopup();});
+        $(function(){var tabContainers = $("div.tabs > div");tabContainers.hide().filter(":first").show();$("div.tabs ul.tabNavigation a").click(function(){tabContainers.hide();
+        tabContainers.filter(this.hash).show();$("div.tabs ul.tabNavigation a").removeClass("selected");$(this).addClass("selected");return false;}).filter(":first").click();});
+      });
+      function hidePopup() {if($("#popupMenu")) $("#popupMenu").remove();}
+      function showPopup(oSender,aLinks){hidePopup();if (aLinks==0) return true;var oParentDiv=document.createElement("DIV");oParentDiv.id="popupMenu";var oLink,oBr=null;
+      for (var nCnt=0;nCnt<aLinks.length;nCnt++){oLink=document.createElement("A");oLink.innerHTML=aLinks[nCnt][0];oLink.href=aLinks[nCnt][1];oLink.target="FrameMain";oLink.onclick=hidePopup;
+      oParentDiv.appendChild(oLink);if (nCnt<aLinks.length-1){oBr=document.createElement("BR");oParentDiv.appendChild(oBr);}}document.body.appendChild(oParentDiv);var pos=$(oSender).offset(); 
+      var height=$(oSender).height();$(oParentDiv).css({"backgroundColor": "#EEEEEE","border": "1px solid #999999","position": "absolute","left": (pos.left+20)+"px","top": (pos.top+height+5)+"px",
+      "padding": 5+"px"});$(oParentDiv).show();return false;}
+      function performSearch(){sValue = $("#search_value").val().toLowerCase();var aValues = sValue.split(" ");var aFinalResults = [];for (var nValue = 0; nValue < aValues.length; nValue++){if (aValues[nValue] == "") continue;var aResults = oSearchData[aValues[nValue]];if (aResults && aResults.length > 0){if (nValue == 0) aFinalResults = aResults
+else aFinalResults = jQuery.richArray.intersect(aFinalResults, aResults);}else{aFinalResults = [];break;}}if (aFinalResults.length > 0){$("#search_results").html("Found " + aFinalResults.length + " results");for (var nCnt = 0; nCnt < aFinalResults.length; nCnt++){var oElmt = document.createElement("DIV");oElmt.innerHTML = "<a href='" + aFinalResults[nCnt][0] + "?search=" + sValue + "' target='FrameMain'>" + aFinalResults[nCnt][1] + "</a> (" + aFinalResults[nCnt][2] + ")<br/>";$(oElmt).appendTo($("#search_results"));}}else{$("#search_results").html("No result found");}}
+    //--></script>
+    <style type="text/css">
+      ul.tabNavigation{list-style: none;margin: 0;padding: 10px;}ul.tabNavigation li{display: inline;}ul.tabNavigation li A{padding: 3px 5px;background-color: #ccc;color: #000;
+      text-decoration: none;}ul.tabNavigation li A.selected,ul.tabNavigation li A:hover{background-color: #333;color: #fff;}ul.tabNavigation li A:focus{outline: 0;}
+      </style>
+  </head>
+
+  <body>
+  
+    <div class="tabs">
+      <ul class="tabNavigation">
+        <li><a href="#tab_toc">Contents</a></li>
+        <li><a href="#tab_keywords">Index</a></li>
+        <li><a href="#tab_search">Search</a></li>
+      </ul>
+      <div id="tab_toc">
+        <ul id="toc" class="filetree">
+          
+          <li>
+            <a href="GettingStarted.html" class="folder" target="FrameMain">Getting Started</a>
+            <ul>
+              
+              <li>
+                <a href="QuickStart.html" class="file" target="FrameMain">Quick Start Guide</a>
+              </li>
+              
+              <li>
+                <a href="AboutVisualbrainfuck.html" class="file" target="FrameMain">About Visual brainfuck</a>
+              </li>
+              
+              <li>
+                <a href="DWYWADCLicense.html" class="file" target="FrameMain">DWYWADC License</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="EnteringyourbrainfuckCode.html" class="folder" target="FrameMain">Entering your brainfuck Code</a>
+            <ul>
+              
+              <li>
+                <a href="BasicControls.html" class="file" target="FrameMain">Basic Controls</a>
+              </li>
+              
+              <li>
+                <a href="UsingComponents.html" class="file" target="FrameMain">Using Components</a>
+              </li>
+              
+              <li>
+                <a href="CommentingCode.html" class="file" target="FrameMain">Commenting Code</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="DebuggingyourbrainfuckCode.html" class="folder" target="FrameMain">Debugging your brainfuck Code</a>
+            <ul>
+              
+              <li>
+                <a href="TheMemoryandProgramTapes.html" class="file" target="FrameMain">The Memory and Program Tapes</a>
+              </li>
+              
+              <li>
+                <a href="Breakpoints.html" class="file" target="FrameMain">Breakpoints</a>
+              </li>
+              
+              <li>
+                <a href="ExecutionButtons.html" class="file" target="FrameMain">Execution Buttons</a>
+              </li>
+              
+              <li>
+                <a href="PeekPoke.html" class="file" target="FrameMain">Peek &amp; Poke</a>
+              </li>
+              
+              <li>
+                <a href="DebuggerOptions.html" class="file" target="FrameMain">Debugger Options</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="DeployingyourbrainfuckApplicat.html" class="folder" target="FrameMain">Deploying your brainfuck Applications</a>
+            <ul>
+              
+              <li>
+                <a href="CompilingyourbrainfuckCode.html" class="file" target="FrameMain">Compiling your brainfuck Code</a>
+              </li>
+              
+              <li>
+                <a href="AbouttheCompiler.html" class="file" target="FrameMain">About the Compiler</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="VisualbrainfuckTools.html" class="folder" target="FrameMain">Visual brainfuck Tools</a>
+            <ul>
+              
+              <li>
+                <a href="TextEncoder.html" class="file" target="FrameMain">Text Encoder</a>
+              </li>
+              
+              <li>
+                <a href="OokTranslator.html" class="file" target="FrameMain">Ook! Translator</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="QuickReference.html" class="folder" target="FrameMain">Quick Reference</a>
+            <ul>
+              
+              <li>
+                <a href="brainfuck.html" class="file" target="FrameMain">brainfuck</a>
+              </li>
+              
+              <li>
+                <a href="Ook.html" class="file" target="FrameMain">Ook!</a>
+              </li>
+            </li>
+        </ul>
+      </div>
+      
+      <div id="tab_keywords">
+        <ul id="keywords" class="filetree">
+          
+          <li>
+            <a href="AboutVisualbrainfuck.html" target="FrameMain" class="file" onclick="hidePopup();">About</a>
+          </li>
+          
+          <li>
+            <a href="Breakpoints.html" target="FrameMain" class="file" onclick="hidePopup();">Breakpoints</a>
+          </li>
+          
+          <li>
+            <a href="ExecutionButtons.html" target="FrameMain" class="file" onclick="hidePopup();">Buttons</a>
+          </li>
+          
+          <li>
+            <a href="CommentingCode.html" target="FrameMain" class="file" onclick="hidePopup();">Comments</a>
+          </li>
+          
+          <li>
+            <a href="AbouttheCompiler.html" target="FrameMain" class="file" onclick="return showPopup(this, [['About the Compiler', 'AbouttheCompiler.html'], ['Compiling your brainfuck Code', 'CompilingyourbrainfuckCode.html'], ['Deploying your brainfuck Applications', 'DeployingyourbrainfuckApplicat.html']]);">Compiler</a>
+          </li>
+          
+          <li>
+            <a href="UsingComponents.html" target="FrameMain" class="file" onclick="hidePopup();">Components</a>
+          </li>
+          
+          <li>
+            <a href="BasicControls.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Basic Controls', 'BasicControls.html'], ['Entering your brainfuck Code', 'EnteringyourbrainfuckCode.html']]);">Controls</a>
+          </li>
+          
+          <li>
+            <a href="DebuggingyourbrainfuckCode.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Debugging your brainfuck Code', 'DebuggingyourbrainfuckCode.html'], ['Breakpoints', 'Breakpoints.html'], ['Debugger Options', 'DebuggerOptions.html'], ['Peek & Poke', 'PeekPoke.html'], ['Execution Buttons', 'ExecutionButtons.html'], ['The Memory and Program Tapes', 'TheMemoryandProgramTapes.html']]);">Debugging</a>
+          </li>
+          
+          <li>
+            <a href="DeployingyourbrainfuckApplicat.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Deploying your brainfuck Applications', 'DeployingyourbrainfuckApplicat.html'], ['Compiling your brainfuck Code', 'CompilingyourbrainfuckCode.html']]);">Deployment</a>
+          </li>
+          
+          <li>
+            <a href="EnteringyourbrainfuckCode.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Entering your brainfuck Code', 'EnteringyourbrainfuckCode.html'], ['Basic Controls', 'BasicControls.html'], ['Using Components', 'UsingComponents.html'], ['Commenting Code', 'CommentingCode.html']]);">Entering Code</a>
+          </li>
+          
+          <li>
+            <a href="QuickStart.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Quick Start Guide', 'QuickStart.html'], ['Entering your brainfuck Code', 'EnteringyourbrainfuckCode.html'], ['Basic Controls', 'BasicControls.html']]);">Getting Started</a>
+          </li>
+          
+          <li>
+            <a href="DWYWADCLicense.html" target="FrameMain" class="file" onclick="hidePopup();">License</a>
+          </li>
+          
+          <li>
+            <a href="OokTranslator.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Ook! Translator', 'OokTranslator.html'], ['Ook!', 'Ook.html']]);">Ook!</a>
+          </li>
+          
+          <li>
+            <a href="DebuggerOptions.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Debugger Options', 'DebuggerOptions.html'], ['Debugging your brainfuck Code', 'DebuggingyourbrainfuckCode.html']]);">Options</a>
+          </li>
+          
+          <li>
+            <a href="PeekPoke.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Peek & Poke', 'PeekPoke.html'], ['Debugging your brainfuck Code', 'DebuggingyourbrainfuckCode.html']]);">Peek &amp; Poke</a>
+          </li>
+          
+          <li>
+            <a href="QuickReference.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Quick Reference', 'QuickReference.html'], ['brainfuck', 'brainfuck.html'], ['Ook!', 'Ook.html'], ['Quick Start Guide', 'QuickStart.html']]);">Quick Reference</a>
+          </li>
+          
+          <li>
+            <a href="TheMemoryandProgramTapes.html" target="FrameMain" class="file" onclick="return showPopup(this, [['The Memory and Program Tapes', 'TheMemoryandProgramTapes.html'], ['Debugging your brainfuck Code', 'DebuggingyourbrainfuckCode.html']]);">Tapes</a>
+          </li>
+          
+          <li>
+            <a href="TextEncoder.html" target="FrameMain" class="file" onclick="hidePopup();">Text Encoder</a>
+          </li>
+          
+          <li>
+            <a href="VisualbrainfuckTools.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Visual brainfuck Tools', 'VisualbrainfuckTools.html'], ['Text Encoder', 'TextEncoder.html']]);">Tools</a>
+          </li>
+          
+          <li>
+            <a href="TheMemoryandProgramTapes.html" target="FrameMain" class="file" onclick="return showPopup(this, [['The Memory and Program Tapes', 'TheMemoryandProgramTapes.html'], ['Debugging your brainfuck Code', 'DebuggingyourbrainfuckCode.html']]);">Watches</a>
+          </li>
+      </ul>
+    </div>
+    <div id="tab_search" style="padding:10px">
+      Search: <form onsubmit="performSearch(); return false;"><input id="search_value"></input><input type="submit" value="search"/></form><div id="search_results"></div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
