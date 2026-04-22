@@ -38,6 +38,6 @@ This is how Visual brainfuck looks.
 
 This project was created by a one-man army in a long timeline between 2002 and 2011, using Borland C++ Builder, and other 3rd party tools like the Brainfuck.NET compiler by Syschikov Andey, HelpNDoc and Inno Setup.
 
-This repository contains the source code, but be advised: it wasn't written for anyone but the author to understand and maintain at the time. Thus, the sole purpose of this repo is to host the executable installer.
+This repository contains the source code, but be advised: it wasn't written for anyone but the author to understand and maintain at the time. Thus, the sole purpose of this repo is to host [the executable installer](https://github.com/kuashio/Visual-brainfuck/raw/refs/heads/main/Visual%20brainfuck%20Setup.exe).
 
-Feel free to download Visual brainfuck and join the few fine esoteric developers around the world. Hopefully we'll make it to... 27?
+Feel free to [download Visual brainfuck](https://github.com/kuashio/Visual-brainfuck/raw/refs/heads/main/Visual%20brainfuck%20Setup.exe) and join the few fine esoteric developers around the world. Hopefully we'll make it to... 27?
